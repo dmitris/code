@@ -16,6 +16,7 @@ fn main() {
     let mut buffer = [0; BYTES_PER_LINE];
 
     // possible after 1.65 / #![feature(let_chains)]?
+    // https://rust-lang.github.io/rfcs/3137-let-else.html
     // while let Ok(n) = f.read(&mut buffer) && n > 0 {
 
     while let Ok(n) = f.read(&mut buffer) {
